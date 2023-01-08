@@ -11,6 +11,7 @@ specifiers:
   eslint: 8.31.0
   eslint-config-next: 13.1.1
   eslint-config-prettier: ^8.6.0
+  mini-svg-data-uri: ^1.4.4
   next: 13.1.1
   postcss: ^8.4.21
   prettier: ^2.8.2
@@ -27,6 +28,7 @@ dependencies:
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.10
   eslint: registry.npmmirror.com/eslint/8.31.0
   eslint-config-next: registry.npmmirror.com/eslint-config-next/13.1.1_iukboom6ndih5an6iafl45j2fe
+  mini-svg-data-uri: registry.npmmirror.com/mini-svg-data-uri/1.4.4
   next: registry.npmmirror.com/next/13.1.1_biqbaboplfbrettd7655fr4n2y
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
@@ -2102,6 +2104,13 @@ packages:
     dependencies:
       braces: registry.npmmirror.com/braces/3.0.2
       picomatch: registry.npmmirror.com/picomatch/2.3.1
+
+  registry.npmmirror.com/mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz}
+    name: mini-svg-data-uri
+    version: 1.4.4
+    hasBin: true
+    dev: false
 
   registry.npmmirror.com/minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/minimatch/-/minimatch-3.1.2.tgz}

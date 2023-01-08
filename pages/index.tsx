@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from '../styles/index.module.css'
 
 export default function Home() {
   return (
@@ -10,7 +11,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className=" text-3xl font-bold underline">Hello world!</h1>
+      <div className="relative flex h-screen items-center justify-center">
+        <div
+          className={`absolute inset-0 h-screen bg-slate-50 bg-bottom bg-no-repeat ${styles.bg}`}
+        >
+          <div
+            className="absolute inset-0 bg-[bottom_1px_center] bg-grid-slate-900/[0.04]"
+            style={{
+              maskImage: 'linear-gradient(to bottom, transparent, black)',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
+            }}
+          />
+        </div>
+
+        <div className="relative h-3/4 w-3/5 rounded-2xl border bg-indigo-300 bg-opacity-50 backdrop-blur">
+          123
+        </div>
+      </div>
     </>
   )
 }
