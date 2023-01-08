@@ -1,4 +1,6 @@
+import { Button, Form, Input, Space } from 'antd'
 import Head from 'next/head'
+import Layout from '../components/Layout/Layout'
 import styles from '../styles/index.module.css'
 
 export default function Home() {
@@ -11,23 +13,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative flex h-screen items-center justify-center">
-        <div
-          className={`absolute inset-0 h-screen bg-slate-50 bg-bottom bg-no-repeat ${styles.bg}`}
-        >
-          <div
-            className="absolute inset-0 bg-[bottom_1px_center] bg-grid-slate-900/[0.04]"
-            style={{
-              maskImage: 'linear-gradient(to bottom, transparent, black)',
-              WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
-            }}
-          />
-        </div>
+      <Layout>
+        <div className="h-full w-1/2 p-10">
+          <div>
+            <h1 className="text-6xl font-bold text-violet-400">Hello,</h1>
+            <h1 className="text-6xl font-bold text-violet-500">Welcome!</h1>
+          </div>
+          <div className="mt-16">
+            <Form layout="vertical">
+              <Form.Item label="用户名">
+                <Input placeholder="Username" />
+              </Form.Item>
+              <Form.Item label="密码">
+                <Input placeholder="Password" />
+              </Form.Item>
 
-        <div className="relative h-3/4 w-3/5 rounded-2xl border bg-indigo-300 bg-opacity-50 backdrop-blur">
-          123
+              <Form.Item className="mt-20">
+                <Space wrap>
+                  <Button type="primary">登录</Button>
+
+                  <Button type="primary" disabled>
+                    注册
+                  </Button>
+                </Space>
+              </Form.Item>
+            </Form>
+          </div>
         </div>
-      </div>
+        <div
+          className={`h-full w-1/2 bg-purple-400 bg-center bg-no-repeat ${styles.loginBg}`}
+        />
+      </Layout>
     </>
   )
 }
