@@ -25,12 +25,17 @@ export default function Home() {
                 <Input placeholder="Username" />
               </Form.Item>
               <Form.Item label="密码">
-                <Input placeholder="Password" />
+                <Input.Password placeholder="Password" />
               </Form.Item>
 
               <Form.Item className="mt-20">
                 <Space wrap>
-                  <Button type="primary">登录</Button>
+                  <Button
+                    type="primary"
+                    className=" bg-violet-400 hover:!bg-violet-600"
+                  >
+                    登录
+                  </Button>
 
                   <Button type="primary" disabled>
                     注册
