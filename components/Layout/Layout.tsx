@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
       </div>
 
-      <div className="relative flex h-3/4 w-3/5 rounded-2xl border bg-pink-50 bg-opacity-50 backdrop-blur">
+      <div className="relative flex h-3/4 w-3/5 overflow-hidden rounded-2xl border bg-pink-50 bg-opacity-50 backdrop-blur">
         {children}
       </div>
     </div>

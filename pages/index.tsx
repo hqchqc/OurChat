@@ -1,4 +1,4 @@
-import { Button, Form, Input, Space } from 'antd'
+import { Button, Form, Input } from 'antd'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import styles from '../styles/index.module.css'
@@ -29,18 +29,18 @@ export default function Home() {
               </Form.Item>
 
               <Form.Item className="mt-20">
-                <Space wrap>
+                <div className="flex w-full justify-between">
                   <Button
                     type="primary"
-                    className=" bg-violet-400 hover:!bg-violet-600"
+                    className="w-2/5 bg-violet-400 hover:!bg-violet-600"
                   >
                     登录
                   </Button>
 
-                  <Button type="primary" disabled>
+                  <Button type="primary" className="w-2/5" disabled>
                     注册
                   </Button>
-                </Space>
+                </div>
               </Form.Item>
             </Form>
           </div>
