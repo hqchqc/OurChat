@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  db:
+    image: postgres
+    volumes:
+       - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - 54320:5432
+    environment:
+      - POSTGRES_USER=hqchqc
+      - POSTGRES_PASSWORD=Aahqchqc
+      - POSTGRES_DB=chatdb
