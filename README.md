@@ -5,3 +5,5 @@
 3. docker-compose run db bash
 4. psql --host=db --username=hqchqc --dbname=chatdb
 5. docker-compose down
+
+## Happy New Year
