@@ -6,4 +6,4 @@
 4. psql --host=db --username=hqchqc --dbname=chatdb
 5. docker-compose down
 
-## Happy New Year
+## Happy New Year 🤣😘😍
