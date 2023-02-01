@@ -1,11 +1,6 @@
-## 一、安装 postgres
+## 开发进展
 
-1. docker-compose up -d
-2. docker-compose ps
-3. docker-compose run db bash
-4. psql --host=db --username=hqchqc --dbname=chatdb
-5. docker-compose down
+2.1 安装依赖 prisma
 
-## start
-
-使用 trpc
+1. pnpm install prisma --save-dev
+2. npx prisma init
