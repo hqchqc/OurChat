@@ -3,6 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@next/font': 13.1.1
   '@prisma/client': ^4.8.1
+  '@tanstack/react-query': ^4.24.4
+  '@trpc/client': ^10.9.1
+  '@trpc/next': ^10.9.1
+  '@trpc/react-query': ^10.9.1
+  '@trpc/server': ^10.9.1
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
@@ -23,10 +28,16 @@ specifiers:
   react-dom: 18.2.0
   tailwindcss: ^3.2.4
   typescript: 4.9.4
+  zod: ^3.20.2
 
 dependencies:
   '@next/font': registry.npmmirror.com/@next/font/13.1.1
   '@prisma/client': registry.npmmirror.com/@prisma/client/4.9.0_prisma@4.9.0
+  '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.24.4_biqbaboplfbrettd7655fr4n2y
+  '@trpc/client': registry.npmmirror.com/@trpc/client/10.9.1_@trpc+server@10.9.1
+  '@trpc/next': registry.npmmirror.com/@trpc/next/10.9.1_qmqxiz5yre2a343e2gyajblas4
+  '@trpc/react-query': registry.npmmirror.com/@trpc/react-query/10.9.1_zbmbdjlledb5jdkr7yrwtjkb5m
+  '@trpc/server': registry.npmmirror.com/@trpc/server/10.9.1
   '@types/node': registry.npmmirror.com/@types/node/18.11.18
   '@types/react': registry.npmmirror.com/@types/react/18.0.26
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.10
@@ -38,6 +49,7 @@ dependencies:
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   typescript: registry.npmmirror.com/typescript/4.9.4
+  zod: registry.npmmirror.com/zod/3.20.2
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.50.0_3k2gkl6ztuj7lkocgsg6q3a2fe
@@ -513,6 +525,93 @@ packages:
     version: 0.4.14
     dependencies:
       tslib: registry.npmmirror.com/tslib/2.5.0
+    dev: false
+
+  registry.npmmirror.com/@tanstack/query-core/4.24.4:
+    resolution: {integrity: sha512-9dqjv9eeB6VHN7lD3cLo16ZAjfjCsdXetSAD5+VyKqLUvcKTL0CklGQRJu+bWzdrS69R6Ea4UZo8obHYZnG6aA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/query-core/-/query-core-4.24.4.tgz}
+    name: '@tanstack/query-core'
+    version: 4.24.4
+    dev: false
+
+  registry.npmmirror.com/@tanstack/react-query/4.24.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-RpaS/3T/a3pHuZJbIAzAYRu+1nkp+/enr9hfRXDS/mojwx567UiMksoqW4wUFWlwIvWTXyhot2nbIipTKEg55Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tanstack/react-query/-/react-query-4.24.4.tgz}
+    id: registry.npmmirror.com/@tanstack/react-query/4.24.4
+    name: '@tanstack/react-query'
+    version: 4.24.4
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@tanstack/query-core': registry.npmmirror.com/@tanstack/query-core/4.24.4
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      use-sync-external-store: registry.npmmirror.com/use-sync-external-store/1.2.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@trpc/client/10.9.1_@trpc+server@10.9.1:
+    resolution: {integrity: sha512-9ma44dFU40KHIEaMdyjRJd9LloFyZZXeAbZJTi2+XK/5sj64FRqqef3fWTj2dBc7A09pk8gls4Tqa3tNC98jSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@trpc/client/-/client-10.9.1.tgz}
+    id: registry.npmmirror.com/@trpc/client/10.9.1
+    name: '@trpc/client'
+    version: 10.9.1
+    peerDependencies:
+      '@trpc/server': 10.9.1
+    dependencies:
+      '@trpc/server': registry.npmmirror.com/@trpc/server/10.9.1
+    dev: false
+
+  registry.npmmirror.com/@trpc/next/10.9.1_qmqxiz5yre2a343e2gyajblas4:
+    resolution: {integrity: sha512-4eYS+2B+TtYpymZBtyPPZG5ZWMEfKvZ1T6Q5sWGGFidBHW3FBjMiSpNmigrFfQpidiAEtygaPyBeJvM2DQtMCw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@trpc/next/-/next-10.9.1.tgz}
+    id: registry.npmmirror.com/@trpc/next/10.9.1
+    name: '@trpc/next'
+    version: 10.9.1
+    peerDependencies:
+      '@tanstack/react-query': ^4.3.8
+      '@trpc/client': 10.9.1
+      '@trpc/react-query': ^10.8.0
+      '@trpc/server': 10.9.1
+      next: '*'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.24.4_biqbaboplfbrettd7655fr4n2y
+      '@trpc/client': registry.npmmirror.com/@trpc/client/10.9.1_@trpc+server@10.9.1
+      '@trpc/react-query': registry.npmmirror.com/@trpc/react-query/10.9.1_zbmbdjlledb5jdkr7yrwtjkb5m
+      '@trpc/server': registry.npmmirror.com/@trpc/server/10.9.1
+      next: registry.npmmirror.com/next/13.1.1_biqbaboplfbrettd7655fr4n2y
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-ssr-prepass: registry.npmmirror.com/react-ssr-prepass/1.5.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@trpc/react-query/10.9.1_zbmbdjlledb5jdkr7yrwtjkb5m:
+    resolution: {integrity: sha512-R6TvyJkvxc0i7qXNHlb+1aUnsJz5YuxhZDzDUJl9akNlvxlmZFm3R9gEMEjDAXIYAUHjbmucl9FKKN6GjCTBTA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@trpc/react-query/-/react-query-10.9.1.tgz}
+    id: registry.npmmirror.com/@trpc/react-query/10.9.1
+    name: '@trpc/react-query'
+    version: 10.9.1
+    peerDependencies:
+      '@tanstack/react-query': ^4.3.8
+      '@trpc/client': 10.9.1
+      '@trpc/server': 10.9.1
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.24.4_biqbaboplfbrettd7655fr4n2y
+      '@trpc/client': registry.npmmirror.com/@trpc/client/10.9.1_@trpc+server@10.9.1
+      '@trpc/server': registry.npmmirror.com/@trpc/server/10.9.1
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/@trpc/server/10.9.1:
+    resolution: {integrity: sha512-cUbj8KphlH0IHuoVUhkZrN1E+FdfRpagglqhblyj8VPJKkjzTjb6D8MYHlXhiX7Tdmtwy2w0ev39HBkzlM0thg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@trpc/server/-/server-10.9.1.tgz}
+    name: '@trpc/server'
+    version: 10.9.1
     dev: false
 
   registry.npmmirror.com/@types/json-schema/7.0.11:
@@ -3669,6 +3768,17 @@ packages:
     version: 16.13.1
     dev: false
 
+  registry.npmmirror.com/react-ssr-prepass/1.5.0_react@18.2.0:
+    resolution: {integrity: sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-ssr-prepass/-/react-ssr-prepass-1.5.0.tgz}
+    id: registry.npmmirror.com/react-ssr-prepass/1.5.0
+    name: react-ssr-prepass
+    version: 1.5.0
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+    dev: false
+
   registry.npmmirror.com/react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react/-/react-18.2.0.tgz}
     name: react
@@ -4160,6 +4270,17 @@ packages:
     dependencies:
       punycode: registry.npmmirror.com/punycode/2.3.0
 
+  registry.npmmirror.com/use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz}
+    id: registry.npmmirror.com/use-sync-external-store/1.2.0
+    name: use-sync-external-store
+    version: 1.2.0
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+    dev: false
+
   registry.npmmirror.com/util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz}
     name: util-deprecate
@@ -4247,3 +4368,9 @@ packages:
     name: yocto-queue
     version: 0.1.0
     engines: {node: '>=10'}
+
+  registry.npmmirror.com/zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zod/-/zod-3.20.2.tgz}
+    name: zod
+    version: 3.20.2
+    dev: false
