@@ -2,8 +2,18 @@ import { Button, Form, Input } from 'antd'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import styles from '../styles/index.module.css'
+import { trpc } from '../utils/trpc'
 
 export default function Home() {
+  const hello = trpc.hello.useQuery({ text: 'client' })
+  const name = trpc.queryName.useQuery({ text: '734986933@qq.com' })
+
+  console.log('name', name.data, hello.data)
+
+  if (!hello.data) {
+    return <div>Loading...</div>
+  }
+
   return (
     <>
       <Head>
@@ -20,6 +30,8 @@ export default function Home() {
             <h1 className="text-6xl font-bold text-violet-500">Welcome!</h1>
           </div>
           <div className="mt-16">
+            {name.data?.item?.name}
+            {name.data?.item?.email}
             <Form layout="vertical">
               <Form.Item label="用户名">
                 <Input placeholder="Username" />

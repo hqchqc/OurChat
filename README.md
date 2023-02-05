@@ -9,3 +9,9 @@
 pnpm add @trpc/server @trpc/client @trpc/react-query @trpc/next @tanstack/react-query zod
 
 2.3 -
+
+
+
+## 使用
+1. docker-compose up
+2. 
