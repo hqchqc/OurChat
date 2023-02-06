@@ -8,8 +8,6 @@ export default function Home() {
   const hello = trpc.hello.useQuery({ text: 'client' })
   const name = trpc.queryName.useQuery({ text: '734986933@qq.com' })
 
-  console.log('name', name.data, hello.data)
-
   if (!hello.data) {
     return <div>Loading...</div>
   }
