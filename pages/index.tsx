@@ -9,7 +9,7 @@ export default function Home() {
   const name = trpc.queryName.useQuery({ text: '734986933@qq.com' })
 
   if (!hello.data) {
-    return <div>Loading...</div>
+    return <div>Loading.....</div>
   }
 
   return (
