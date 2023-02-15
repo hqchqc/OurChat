@@ -44,11 +44,11 @@ export default function Home() {
                     type="primary"
                     className="w-2/5 bg-violet-400 hover:!bg-violet-600"
                   >
-                    登录
+                    登录 
                   </Button>
 
                   <Button type="primary" className="w-2/5" disabled>
-                    注册
+                    注册 
                   </Button>
                 </div>
               </Form.Item>
