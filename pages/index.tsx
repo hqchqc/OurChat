@@ -50,6 +50,7 @@ export default function Home() {
                   <Button type="primary" className="w-2/5" disabled>
                     注册 
                   </Button>
+                  
                 </div>
               </Form.Item>
             </Form>
